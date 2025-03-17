@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1b5e20;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.marketplace-item img {
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.marketplace-item:hover img {
+    transform: scale(1.05);
+}
+

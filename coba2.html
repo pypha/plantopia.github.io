@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantopia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="font-roboto bg-white text-black">
+    <!-- Header -->
+    <header class="bg-green-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav class="flex space-x-4">
+                <a class="hover:underline" href="#">Home</a>
+                <a href="comunity.html" class="hover:underline">Community</a>
+            </nav>
+            <a href="login.html" class="flex items-center space-x-2 hover:underline">
+                <i class="fas fa-user"></i>
+                <span>Login</span>
+            </a>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative">
+        <img src="https://storage.googleapis.com/a1aa/image/e6m2fHd896fOhrkjHJYf7soRYvSNKaWsu-z_O_x78YU.jpg" alt="Green leaves background"class="w-full h-96 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white">
+            <h1 class="text-4xl font-bold">Welcome to PLANTOPIA</h1>
+            <p class="mt-4 max-w-xl">Join the green revolution! whether you're a beginner or a seasoned plnt lover,Plantopia helps you teke care of your plants with ease. Connect with a thriving community of fellow gardeners. </p>
+            <a href="contact.html" class="mt-6 bg-white text-green-900 px-4 py-2 rounded">Contact Us</a>
+        </div>
+    </section>
+    <!-- Marketplace -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center cursor-pointer" onclick="toggleContent('marketplace-content')">MARKETPLACE</h2>
+            <div id="marketplace-content" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 hidden">
+                <div class="relative">
+                    <img src="https://storage.googleapis.com/a1aa/image/CRgdr2TPbmZw-b5ZRfGqqFL523FLWSkC8WhbVYW4GAc.jpg" class="w-full h-48 object-cover rounded">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white">
+                        <h3 class="text-xl font-bold">Herbs Plant</h3>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://storage.googleapis.com/a1aa/image/POqtHTrfPBvs4TBQHSI6QnZtlNQyNMPJVPDcp3UJ9ik.jpg" class="w-full h-48 object-cover rounded">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white">
+                        <h3 class="text-xl font-bold">Orchids</h3>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://storage.googleapis.com/a1aa/image/P_MAT-rV_PWQ5Ev7HRJpXSO9MhvXQ4YYXmh2mTDyLGA.jpg" class="w-full h-48 object-cover rounded">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white">
+                        <h3 class="text-xl font-bold">Succulents</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section class="py-8">
+        <div class="container mx-auto">
+            <div class="space-y-4">
+                <div class="border rounded p-4 cursor-pointer" onclick="toggleContent('faq1')">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">Ordering for Delivery?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p id="faq1" class="hidden mt-2">We offer fast and reliable delivery services to your doorstep.</p>
+                </div>
+                <div class="border rounded p-4 cursor-pointer" onclick="toggleContent('faq2')">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">Potting Services</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p id="faq2" class="hidden mt-2">We provide professional potting services for your plants.</p>
+                </div>
+                <div class="border rounded p-4 cursor-pointer" onclick="toggleContent('faq3')">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">Do we Ship Plants?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p id="faq3" class="hidden mt-2">Yes, we ship plants nationwide with special packaging.</p>
+                </div>
+                <div class="border rounded p-4 cursor-pointer" onclick="toggleContent('faq4')">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">Ordering for Pick up?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p id="faq4" class="hidden mt-2">You can order online and pick up your plants at our store.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+<!-- Join the Community -->
+<section class="py-8 bg-green-900 text-white text-center">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold">Join the Community!</h2>
+        <p class="mt-2">Stay updated with the latest news and special offers.</p>
+        <div class="mt-4 flex justify-center space-x-2">
+            <button class="bg-white text-green-900 px-4 py-2 rounded">Instagram</button>
+            <button class="bg-white text-green-900 px-4 py-2 rounded">Twitter</button>
+            <button class="bg-white text-green-900 px-4 py-2 rounded">YouTube</button>
+            <button class="bg-white text-green-900 px-4 py-2 rounded">WhatsApp</button>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2023 Plantopia. All rights reserved.</p>
+</footer>
+</body>
+</html>

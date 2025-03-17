@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantopia Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Header -->
+    <header class="bg-green-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Plantopia Community</h1>
+            <a href="coba2.html" class="hover:underline">Back to Home</a>
+        </div>
+    </header>
+    
+    <!-- Upload Section -->
+    <section class="p-6 bg-white shadow-md max-w-2xl mx-auto mt-6 rounded">
+        <h2 class="text-xl font-bold mb-4">Create a Post</h2>
+        <textarea class="w-full p-2 border rounded mb-2" placeholder="What's on your mind?"></textarea>
+        <input type="file" class="mb-2 w-full">
+        <button class="bg-green-900 text-white px-4 py-2 rounded w-full">Post</button>
+    </section>
+    
+    <!-- Posts Section -->
+    <section class="max-w-2xl mx-auto mt-6">
+        <h2 class="text-xl font-bold mb-4">Recent Posts</h2>
+        <div class="bg-white p-4 rounded shadow mb-4">
+            <p class="mb-2">User123: Just bought a new Monstera plant! 🌱</p>
+            <img src="https://storage.googleapis.com/a1aa/image/sample.jpg" alt="Plant" class="w-full rounded">
+        </div>
+        <div class="bg-white p-4 rounded shadow mb-4">
+            <p class="mb-2">GreenThumb: Check out my latest garden setup! 🌿</p>
+            <video class="w-full rounded" controls>
+                <source src="https://storage.googleapis.com/a1aa/video/sample.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-6">
+        <p>&copy; 2023 Plantopia Community. All rights reserved.</p>
+    </footer>
+</body>
+</html>

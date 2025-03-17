@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="marketplace.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Marketplace Tanaman</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Keranjang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="checkout">
+            <h2>Checkout</h2>
+            <form onsubmit="return confirmOrder()">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Alamat Pengiriman:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="shipping">Pilih Pengiriman:</label>
+                <select id="shipping" name="shipping" required>
+                    <option value="regular">Reguler (3-5 hari) - Rp 20.000</option>
+                    <option value="express">Express (1-2 hari) - Rp 50.000</option>
+                </select>
+
+                <button type="submit">Beli Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Marketplace Tanaman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function confirmOrder() {
+            alert("Pesanan berhasil ditempatkan!");
+            window.location.href = "confirmation.html";
+            return false; // Mencegah form submit
+        }
+    </script>
+</body>
+</html>
